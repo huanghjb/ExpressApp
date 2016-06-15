@@ -1,13 +1,14 @@
 {
-  "name": "express-app",
+  "name": "typescript-node-js-app",
   "version": "0.0.0",
-  "description": "ExpressApp",
+  "description": "typescriptNodeJsApp",
   "main": "app.js",
   "author": {
     "name": "LIK41",
     "email": ""
   },
   "dependencies": {
+    "body-parser": "1.15.1",
     "express": "3.4.4",
     "jade": "*",
     "stylus": "*"

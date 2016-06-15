@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "ExpressApp", "ExpressApp\ExpressApp.njsproj", "{BCAC70C5-EF9B-4275-AF16-FB39BD9247A5}"
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "typescriptNodeJsApp", "typescriptNodeJsApp\typescriptNodeJsApp.njsproj", "{3C98ED39-E8F0-426E-A3CB-A752B8546269}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BCAC70C5-EF9B-4275-AF16-FB39BD9247A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCAC70C5-EF9B-4275-AF16-FB39BD9247A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCAC70C5-EF9B-4275-AF16-FB39BD9247A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCAC70C5-EF9B-4275-AF16-FB39BD9247A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C98ED39-E8F0-426E-A3CB-A752B8546269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C98ED39-E8F0-426E-A3CB-A752B8546269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C98ED39-E8F0-426E-A3CB-A752B8546269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C98ED39-E8F0-426E-A3CB-A752B8546269}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

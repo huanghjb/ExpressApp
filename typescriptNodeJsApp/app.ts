@@ -1,16 +1,12 @@
-﻿
-/**
- * Module dependencies.
- */
-
-var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
-var http = require('http');
-var path = require('path');
-
+﻿import express = require('express');
+import routes = require('./routes/index');
+import user = require('./routes/user');
+import http = require('http');
+import path = require('path');
+import bodyparser = require('body-parser');
+import reg = require('./routes/registration');
 var app = express();
-
+app.use(bodyparser());
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
@@ -21,7 +17,9 @@ app.use(express.json());
 app.use(express.urlencoded());
 app.use(express.methodOverride());
 app.use(app.router);
-app.use(require('stylus').middleware(path.join(__dirname, 'public')));
+
+import stylus = require('stylus');
+app.use(stylus.middleware(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
@@ -31,6 +29,9 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+
+app.get('/api/registrations', reg.registrations);
+app.get('/api/register',)
 
 http.createServer(app).listen(app.get('port'), function () {
     console.log('Express server listening on port ' + app.get('port'));
